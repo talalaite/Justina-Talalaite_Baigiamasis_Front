@@ -3,16 +3,17 @@ import * as S from './Product.style';
 
 import Button from '../Button/Button';
 
-const Product = () => (
-  <>
-    <S.ProductContainer>
-      <S.ProductImage />
-      <S.ProductTitle />
-      <S.ProductDescription />
-      <S.ProductPrice />
-      <Button />
-    </S.ProductContainer>
-  </>
+const Product = ({ image, title, price }) => (
+  <S.ProductContainer>
+    <S.ProductImage src={image} />
+    <S.ProductTitle>{title}</S.ProductTitle>
+    <S.ProductDescription />
+    <S.ProductPrice>
+      &euro;
+      {price}
+    </S.ProductPrice>
+    <Button background="#040C26">add to cart</Button>
+  </S.ProductContainer>
 );
 
 export default Product;

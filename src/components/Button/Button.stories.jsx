@@ -6,5 +6,7 @@ export default {
   component: Button,
 };
 
-export const Primary = () => <Button color="red">hi</Button>;
-export const Secondary = () => <Button color="blue">hey</Button>;
+export const AddButton = () => (
+  <Button background="#061031">add to cart</Button>
+);
+export const Secondary = () => <Button background="red">hey</Button>;

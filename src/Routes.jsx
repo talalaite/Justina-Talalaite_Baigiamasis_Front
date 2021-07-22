@@ -25,14 +25,13 @@ const links = [
 
 const Routes = () => (
   <Router>
-    <Header links={links}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/products" component={Products} />
-        <Route exact path="/register" component={Register} />
-      </Switch>
-    </Header>
+    <Header links={links} />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/products" component={Products} />
+      <Route exact path="/register" component={Register} />
+    </Switch>
   </Router>
 );
 

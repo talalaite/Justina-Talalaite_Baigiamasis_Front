@@ -15,15 +15,17 @@ const Header = ({ links }) => (
               {link.title}
             </S.StyledLink>
           ))}
+        <S.Button
+          onClick={() => {
+            localStorage.removeItem('user');
+            window.location.replace(
+              'https://bitenu-medus-nef34.ondigitalocean.app/',
+            );
+          }}
+        >
+          Logout&#10150;
+        </S.Button>
       </S.LinksBlock>
-      <S.Button
-        onClick={() => {
-          localStorage.removeItem('user');
-          window.location.replace('http://localhost:3000/login');
-        }}
-      >
-        Logout&#10150;
-      </S.Button>
     </S.NavigationBlock>
   </S.NavigationWraper>
 );

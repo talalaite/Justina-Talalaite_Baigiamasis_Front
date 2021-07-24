@@ -11,7 +11,7 @@ export const NavigationWraper = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 3rem;
+  height: 4rem;
 `;
 
 export const NavigationBlock = styled.header`
@@ -26,18 +26,24 @@ export const NavigationBlock = styled.header`
 `;
 
 export const LinksBlock = styled.nav`
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  @media only screen and (min-width: 750px) {
+    & {
+      margin-top: 1.5rem;
+    }
+  }
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   display: block;
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   font-size: 0.8rem;
   padding: 0.5rem;
   &:hover {
-    color: black;
+    color: #eac000;
   }
   @media only screen and (min-width: 750px) {
     & {
@@ -49,9 +55,13 @@ export const StyledLink = styled(Link)`
 export const Button = styled.button`
   border: none;
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
   &:hover {
-    text-decoration: underline;
+    color: #eac000;
   }
 `;

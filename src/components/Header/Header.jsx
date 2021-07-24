@@ -22,7 +22,7 @@ const Header = ({ links }) => (
           window.location.replace('http://localhost:3000/login');
         }}
       >
-        Logout
+        Logout&#10150;
       </S.Button>
     </S.NavigationBlock>
   </S.NavigationWraper>

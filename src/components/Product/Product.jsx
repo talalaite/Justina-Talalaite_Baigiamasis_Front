@@ -3,11 +3,11 @@ import * as S from './Product.style';
 
 import Button from '../Button/Button';
 
-const Product = ({ image, title, price }) => (
+const Product = ({ image, title, price, description }) => (
   <S.ProductContainer>
     <S.ProductImage src={image} />
     <S.ProductTitle>{title}</S.ProductTitle>
-    <S.ProductDescription />
+    <S.ProductDescription>{description}</S.ProductDescription>
     <S.ProductPrice>
       &euro;
       {price}

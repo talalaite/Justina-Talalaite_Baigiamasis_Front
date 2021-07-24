@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 
 import BasketProvider from './contexts/basketContext';
 import Routes from './Routes';

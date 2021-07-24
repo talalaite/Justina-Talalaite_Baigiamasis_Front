@@ -10,7 +10,6 @@ export const Button = styled.button`
   outline: none;
   padding: 1rem 2rem;
   text-transform: uppercase;
-  transition: transform 0.2s ease-in-out;
   &:hover {
     transform: scale(1.02);
   }

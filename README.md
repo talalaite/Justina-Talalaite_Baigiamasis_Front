@@ -1,6 +1,6 @@
-:honeybee: This is a simple ecommerce project
+# :sunflower: This is a simple ecommerce project for "Bitėnų medus" :honeybee:
 
-About:
+## About:
 
 Here you can:
 

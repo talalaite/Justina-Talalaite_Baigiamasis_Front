@@ -1,8 +1,6 @@
 # :sunflower: This is a simple ecommerce project for "Bitėnų medus" :honeybee:
 
-## About:
-
-Here you can:
+### Here you can:
 
 - check out products
 - create an account

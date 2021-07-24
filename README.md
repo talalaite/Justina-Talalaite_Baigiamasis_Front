@@ -6,6 +6,10 @@
 - create an account
 - add or remove products from your cart
 
+:heavy_check_mark: You can Login to the system with user:
+:e-mail: Email: dummy@email.com
+:unlock: Password: dummy123
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Header } from './components';
+import { Header, Footer } from './components';
 import { Home, Login, Products, Register } from './pages';
 
 const links = [
@@ -32,6 +32,7 @@ const Routes = () => (
       <Route exact path="/products" component={Products} />
       <Route exact path="/register" component={Register} />
     </Switch>
+    <Footer />
   </Router>
 );
 

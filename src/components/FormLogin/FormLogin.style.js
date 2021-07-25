@@ -10,7 +10,7 @@ export const LoginWrapper = styled.div`
   padding: 1rem;
   @media only screen and (min-width: 750px) {
     & {
-      max-width: 750px;
+      min-width: 750px;
       margin: 0 auto;
       padding-top: 5rem;
     }

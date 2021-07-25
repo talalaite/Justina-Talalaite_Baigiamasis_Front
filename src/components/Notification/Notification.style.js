@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
 export const NotificationBlock = styled.div`
-  background: #e6f4f1;
+  background: #fff5c4;
   border-radius: 0.4rem;
   color: #000;
   padding: 1rem;
   position: relative;
+  margin-bottom: 1rem;
+  text-align: center;
 `;
 
 export const CloseButton = styled.button`
-  background-color: #95b0b4;
+  background-color: #bcbbaf;
   border: 0;
   border-radius: 50%;
-  color: #eefcfe;
+  color: #ffffff;
   cursor: pointer;
   height: 1rem;
   width: 1rem;

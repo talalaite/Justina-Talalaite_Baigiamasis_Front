@@ -1,5 +1,9 @@
 import React from 'react';
+import { FormRegister } from '../../components';
 
-const Register = () => <h1>hallo</h1>;
-
+const Register = () => (
+  <>
+    <FormRegister />
+  </>
+);
 export default Register;

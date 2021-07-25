@@ -1,25 +1,29 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import * as S from './FormLogin.style';
+import * as S from './FormRegister.style';
 
 import Button from '../Button/Button';
 import Notification from '../Notification/Notification';
 
-const FormLogin = () => {
+const FormRegister = () => {
   const [message, setMessage] = useState();
+  const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  function login(e) {
+  function register(e) {
     e.preventDefault();
+    setName(e.target.name.value);
     setEmail(e.target.email.value);
     setPassword(e.target.password.value);
 
+    e.target.name.value = '';
     e.target.email.value = '';
     e.target.password.value = '';
     axios
-      .post('https://eshop-lb2vh.ondigitalocean.app/auth/login', {
+      .post('https://eshop-lb2vh.ondigitalocean.app/auth/register', {
+        name,
         email,
         password,
       })
@@ -28,8 +32,8 @@ const FormLogin = () => {
           localStorage.setItem('user', res.data.token);
         }
 
-        if (res.data.msg.includes('logged')) {
-          window.location.replace('/home');
+        if (res.data.msg.includes('registered')) {
+          window.location.replace('/login');
         }
         setMessage(res.data.msg);
       })
@@ -48,10 +52,20 @@ const FormLogin = () => {
 
   return (
     <>
-      <S.LoginWrapper>
+      <S.RegisterWrapper>
         <Notification message={message} handleDelete={deleteNotification} />
-        <S.Title>login</S.Title>
-        <S.FormLogin onSubmit={login}>
+        <S.Title>register</S.Title>
+        <S.FormRegister onSubmit={register}>
+          <S.Input
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Name"
+            type="text"
+            name="name"
+            minLength="3"
+            maxLength="255"
+            required
+          />
+
           <S.Input
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
@@ -72,11 +86,11 @@ const FormLogin = () => {
             required
           />
 
-          <Button type="submit">Login</Button>
-        </S.FormLogin>
-      </S.LoginWrapper>
+          <Button type="submit">Register</Button>
+        </S.FormRegister>
+      </S.RegisterWrapper>
     </>
   );
 };
 
-export default FormLogin;
+export default FormRegister;

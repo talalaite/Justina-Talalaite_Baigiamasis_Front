@@ -1,7 +1,6 @@
 import React from 'react';
 import * as S from './Product.style';
 
-// import { Button } from '..';
 import Button from '../Button/Button';
 
 const Product = ({ image, title, price, description }) => (

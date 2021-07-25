@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 export const NavigationWraper = styled.div`
   @media only screen and (min-width: 750px) {
     & {
-      max-width: 900px;
+      max-width: 750px;
       margin: 0 auto;
     }
   }
 `;
 
 export const Logo = styled.img`
-  height: 4rem;
+  height: 3.2rem;
 `;
 
 export const NavigationBlock = styled.header`
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0 0 0;
   @media only screen and (min-width: 750px) {
     & {
       display: flex;
@@ -29,7 +29,7 @@ export const LinksBlock = styled.nav`
   margin-top: 0.5rem;
   @media only screen and (min-width: 750px) {
     & {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
   }
 `;
@@ -48,6 +48,7 @@ export const StyledLink = styled(Link)`
   @media only screen and (min-width: 750px) {
     & {
       display: inline;
+      padding: 0 0 0 1rem;
     }
   }
 `;
@@ -63,5 +64,11 @@ export const Button = styled.button`
   text-transform: uppercase;
   &:hover {
     color: #eac000;
+  }
+  @media only screen and (min-width: 750px) {
+    & {
+      display: inline;
+      padding: 0 0 0 1rem;
+    }
   }
 `;

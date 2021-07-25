@@ -6,7 +6,4 @@ export default {
   component: Button,
 };
 
-export const AddButton = () => (
-  <Button background="#061031">add to cart</Button>
-);
-export const Secondary = () => <Button background="red">hey</Button>;
+export const ButtonStory = () => <Button>hey</Button>;

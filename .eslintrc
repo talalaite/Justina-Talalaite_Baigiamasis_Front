@@ -15,8 +15,10 @@
   "rules": {
     "import/prefer-default-export": "off",
     "object-curly-newline": "off",
-    "react/prop-types": "off",
     "operator-linebreak": "off",
-    "import/no-named-as-default": "off"
+    "react/prop-types": "off",
+    "import/no-named-as-default": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off"
   }
 }

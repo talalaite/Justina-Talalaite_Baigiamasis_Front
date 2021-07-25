@@ -3,9 +3,9 @@ import axios from 'axios';
 
 import * as S from './FormLogin.style';
 
-import { Button, Notification } from '..';
-// import Button from '../Button/Button';
-// import Notification from '../Notification/Notification';
+// import { Button, Notification } from '..';
+import Button from '../Button/Button';
+import Notification from '../Notification/Notification';
 
 const FormLogin = () => {
   const [message, setMessage] = useState();

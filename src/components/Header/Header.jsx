@@ -18,12 +18,10 @@ const Header = ({ links }) => (
         <S.Button
           onClick={() => {
             localStorage.removeItem('user');
-            window.location.replace(
-              'https://bitenu-medus-nef34.ondigitalocean.app/',
-            );
+            window.location.replace('http://localhost:3000');
           }}
         >
-          Logout&#10150;
+          logout&#10150;
         </S.Button>
       </S.LinksBlock>
     </S.NavigationBlock>

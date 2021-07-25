@@ -1,6 +1,7 @@
 body {
   background-color: #05021b;
   font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 #root {

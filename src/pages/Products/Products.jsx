@@ -1,5 +1,10 @@
 import React from 'react';
+import { ProductsList } from '../../components';
 
-const Products = () => <h1>Products</h1>;
+const Products = () => (
+  <>
+    <ProductsList />
+  </>
+);
 
 export default Products;

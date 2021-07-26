@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const NavigationWraper = styled.div`
   @media only screen and (min-width: 750px) {
@@ -34,7 +34,7 @@ export const LinksBlock = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   text-decoration: none;
   display: block;
   color: #ffffff;
@@ -43,6 +43,9 @@ export const StyledLink = styled(Link)`
   font-size: 0.8rem;
   padding: 0.5rem;
   &:hover {
+    color: #eac000;
+  }
+  &.active {
     color: #eac000;
   }
   @media only screen and (min-width: 750px) {
@@ -62,6 +65,7 @@ export const Button = styled.button`
   letter-spacing: 0.1rem;
   padding: 0.5rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
   &:hover {
     color: #eac000;
   }

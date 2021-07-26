@@ -9,7 +9,6 @@ export const IntroWrapper = styled.div`
   @media only screen and (min-width: 750px) {
     & {
       max-width: 100vw;
-
       margin-top: 5rem;
     }
   }

@@ -16,9 +16,9 @@
     "import/prefer-default-export": "off",
     "object-curly-newline": "off",
     "operator-linebreak": "off",
-    "react/prop-types": "off",
     "import/no-named-as-default": "off",
     "react/jsx-indent": "off",
-    "react/jsx-indent-props": "off"
+    "react/jsx-indent-props": "off",
+    "react/prop-types": "off"
   }
 }

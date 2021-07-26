@@ -1,15 +1,19 @@
 import React from 'react';
 
-import * as S from './ProductsList.style';
+import Product from '../Product/Product';
 
-import { Product } from '..';
-// import Product from '../Product/Product';
-
-const ProductsList = () => (
+const ProductsList = ({ data }) => (
   <>
-    <S.ListContainer>
-      <Product />
-    </S.ListContainer>
+    {data &&
+      data.map((product) => (
+        <Product
+          key={product.title}
+          image={product.img}
+          title={product.title}
+          description={product.description}
+          price={product.price}
+        />
+      ))}
   </>
 );
 

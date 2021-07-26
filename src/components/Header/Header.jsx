@@ -11,7 +11,12 @@ const Header = ({ links }) => (
       <S.LinksBlock>
         {links &&
           links.map((link) => (
-            <S.StyledLink key={link.url} to={link.url}>
+            <S.StyledLink
+              key={link.url}
+              exact
+              to={link.url}
+              activeClassName="active"
+            >
               {link.title}
             </S.StyledLink>
           ))}
@@ -21,7 +26,7 @@ const Header = ({ links }) => (
             window.location.replace('http://localhost:3000');
           }}
         >
-          logout&#10150;
+          logout
         </S.Button>
       </S.LinksBlock>
     </S.NavigationBlock>

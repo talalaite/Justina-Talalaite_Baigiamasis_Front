@@ -5,9 +5,30 @@ export const Footer = styled.div`
   margin-top: auto;
 `;
 
+export const Container = styled.div`
+  @media only screen and (min-width: 750px) {
+    & {
+      width: 750px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+`;
+
 export const FooterWrapper = styled.div`
-  padding: 2rem;
   text-align: center;
+
+  &:last-child {
+    padding-bottom: 2rem;
+  }
+
+  @media only screen and (min-width: 750px) {
+    & {
+      padding-bottom: 1rem;
+      text-align: left;
+    }
+  }
 `;
 
 export const Title = styled.h3`
@@ -22,12 +43,17 @@ export const Ul = styled.div`
 
 export const ListItems = styled.li`
   list-style: none;
-  padding-top: 0.7rem;
-  font-size: 0.8rem;
+  padding-top: 0.6rem;
+  font-size: 0.7rem;
 `;
 
 export const CopyRight = styled.span`
   color: #eac000;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+`;
+
+export const Icon = styled.span`
+  padding: 0.5rem 0.5rem 0 0;
+  font-size: 1rem;
 `;

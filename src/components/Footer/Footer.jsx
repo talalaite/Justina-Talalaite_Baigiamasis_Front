@@ -1,10 +1,8 @@
 import React from 'react';
-
 import { GiHouse, GiBee } from 'react-icons/gi';
 import { ImPhone } from 'react-icons/im';
 import { MdEmail } from 'react-icons/md';
 import { FaRegCopyright } from 'react-icons/fa';
-
 import * as S from './Footer.style';
 
 const Footer = () => (

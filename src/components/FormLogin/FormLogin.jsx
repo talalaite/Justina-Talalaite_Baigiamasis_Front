@@ -29,7 +29,9 @@ const FormLogin = () => {
         }
 
         if (res.data.msg.includes('logged')) {
-          window.location.replace('/home');
+          window.location.replace(
+            'https://bitenu-medus-nef34.ondigitalocean.app/cart',
+          );
         }
         setMessage(res.data.msg);
       })
@@ -72,7 +74,7 @@ const FormLogin = () => {
             required
           />
 
-          <Button type="submit">Login</Button>
+          <Button type="submit">login</Button>
         </S.FormLogin>
       </S.LoginWrapper>
     </>

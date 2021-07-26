@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { RiShoppingCartLine } from 'react-icons/ri';
 import * as S from './Product.style';
+import Button from '../Button/Button';
 
 const Product = ({ image, title, description, price }) => (
   <>
@@ -14,6 +15,14 @@ const Product = ({ image, title, description, price }) => (
         &euro;
         {price}
       </S.ProductPrice>
+      <S.ButtonContainer>
+        <Button>
+          <div>
+            <span>add to cart</span>
+            <RiShoppingCartLine />
+          </div>
+        </Button>
+      </S.ButtonContainer>
     </S.ProductContainer>
   </>
 );

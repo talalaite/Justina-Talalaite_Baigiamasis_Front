@@ -24,7 +24,7 @@ export const ProductContainer = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  height: 14rem;
+  height: 13rem;
   width: 13rem;
   margin: 0 auto;
 `;
@@ -49,4 +49,9 @@ export const ProductDescription = styled.p`
 
 export const ProductPrice = styled.span`
   font-weight: bold;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 11rem;
+  margin: auto;
 `;

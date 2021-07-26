@@ -20,14 +20,19 @@ const Header = ({ links }) => (
               {link.title}
             </S.StyledLink>
           ))}
-        <S.Button
-          onClick={() => {
-            localStorage.removeItem('user');
-            window.location.replace('http://localhost:3000');
-          }}
-        >
-          logout
-        </S.Button>
+
+        {localStorage.getItem('user') ? (
+          <S.Button
+            onClick={() => {
+              localStorage.removeItem('user');
+              window.location.replace('http://localhost:3000');
+            }}
+          >
+            logout
+          </S.Button>
+        ) : (
+          <></>
+        )}
       </S.LinksBlock>
     </S.NavigationBlock>
   </S.NavigationWraper>

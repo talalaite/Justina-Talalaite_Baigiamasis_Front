@@ -25,7 +25,9 @@ const Header = ({ links }) => (
           <S.Button
             onClick={() => {
               localStorage.removeItem('user');
-              window.location.replace('http://localhost:3000');
+              window.location.replace(
+                'https://bitenu-medus-nef34.ondigitalocean.app/',
+              );
             }}
           >
             logout

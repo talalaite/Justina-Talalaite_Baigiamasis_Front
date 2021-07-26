@@ -1,19 +1,23 @@
 import React from 'react';
 
+import * as S from './ProductsList.style';
+
 import Product from '../Product/Product';
 
-const ProductsList = ({ data }) => (
+const ProductsList = ({ products }) => (
   <>
-    {data &&
-      data.map((product) => (
-        <Product
-          key={product.title}
-          image={product.img}
-          title={product.title}
-          description={product.description}
-          price={product.price}
-        />
-      ))}
+    <S.ProductsContainer>
+      {products &&
+        products.map((product) => (
+          <Product
+            key={product.id}
+            image={product.image}
+            title={product.title}
+            description={product.description}
+            price={product.price}
+          />
+        ))}
+    </S.ProductsContainer>
   </>
 );
 

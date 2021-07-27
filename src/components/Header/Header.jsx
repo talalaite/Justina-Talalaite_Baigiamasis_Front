@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import * as S from './Header.style';
 
 import Logo from '../../assets/Logo.png';
@@ -39,5 +39,14 @@ const Header = ({ links }) => (
     </S.NavigationBlock>
   </S.NavigationWraper>
 );
+
+Header.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
 
 export default Header;

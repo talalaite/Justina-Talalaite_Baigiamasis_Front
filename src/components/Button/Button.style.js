@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
+const background = {
+  primary: '#ffd91d',
+  secondary: '#ffffff',
+};
+
 export const Button = styled.button`
-  background: #ffd91d;
+  background: ${(props) => background[props.color]};
   border: none;
   border-radius: 2rem;
   color: #040c26;

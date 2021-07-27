@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as S from './Notification.style';
 
 const Notification = ({ message, handleDelete }) => {
-  // console.log(message);
   if (message) {
     return (
       <>
@@ -16,4 +16,12 @@ const Notification = ({ message, handleDelete }) => {
   return <></>;
 };
 
+Notification.propTypes = {
+  message: PropTypes.string,
+  handleDelete: PropTypes.func.isRequired,
+};
+
+Notification.defaultProps = {
+  message: undefined,
+};
 export default Notification;

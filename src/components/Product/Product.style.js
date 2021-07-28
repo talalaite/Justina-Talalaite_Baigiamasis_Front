@@ -47,7 +47,7 @@ export const ProductDescription = styled.p`
   text-transform: uppercase;
 `;
 
-export const ProductPrice = styled.span`
+export const ProductPrice = styled.div`
   font-weight: bold;
 `;
 

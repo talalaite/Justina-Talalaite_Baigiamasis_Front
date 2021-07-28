@@ -9,7 +9,6 @@ const Cart = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
-      setMessage('You need to login first');
       window.location.replace(
         'https://bitenu-medus-nef34.ondigitalocean.app/login',
       );
